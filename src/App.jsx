@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Brands from './components/Brands';
+import Brands from './components/Marquee';
 import Tools from './components/Tools';
 import Trust from './components/Trust';
 import Testimonials from './components/Testimonials';
@@ -13,6 +13,7 @@ import NewsLetter from './components/NewsLetter';
 import Alert from './components/Alert';
 import { useRecoilState } from 'recoil';
 import { alertAtom } from './store/atom/alert';
+import Marguee from './components/Marquee';
 
 export default function App() {
   const [alert, setAlert] = useRecoilState(alertAtom);
@@ -29,7 +30,7 @@ export default function App() {
       <Alert />
       <Header />
       <Hero />
-      <Brands />
+      <Marguee />
       <Tools />
       <Trust />
       <Testimonials />
